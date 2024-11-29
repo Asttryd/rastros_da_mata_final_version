@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:rastros_da_mata_official_app/views/about_page.dart';
+import 'package:rastros_da_mata_official_app/views/onboarding_page.dart';
 import 'package:rastros_da_mata_official_app/views/plants_page.dart';
 import 'firebase_options.dart';
 
@@ -16,9 +18,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PlantsPage(),
+      initialRoute: '/onboarding',
+      routes: {
+        '/onboarding': (context) => const OnboardingScreen(),
+        '/plants': (context) => const PlantsPage(),
+        '/about': (context) => const AboutPage(),
+      },
     );
   }
 }

@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:rastros_da_mata_official_app/services/firestore.dart';
 import 'package:rastros_da_mata_official_app/views/plant_detail_page.dart';
+import 'package:rastros_da_mata_official_app/widgets/drawer_menu.dart';
 
 class PlantsPage extends StatefulWidget {
   const PlantsPage({super.key});
@@ -16,7 +17,17 @@ class _PlantsPageState extends State<PlantsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text('Plantas')),
+        backgroundColor: Colors.white,
+        appBar: AppBar(
+          title: const Text('Plantas'),
+          titleTextStyle: const TextStyle(color: Colors.white, fontSize: 25.0),
+          centerTitle: true,
+          backgroundColor: const Color.fromARGB(255, 12, 99, 56),
+          iconTheme: const IconThemeData(
+            color: Colors.white, // Drawer icon color
+          ),
+        ),
+        drawer: const CustomDrawer(),
         body: StreamBuilder<QuerySnapshot>(
           stream: firestoreService.getPlantsStream(),
           builder: (context, snapshot) {
@@ -69,6 +80,7 @@ class _PlantsPageState extends State<PlantsPage> {
                         borderRadius: BorderRadius.circular(12.0),
                       ),
                       elevation: 4.0,
+                      color: const Color.fromARGB(255, 12, 99, 56),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
@@ -97,12 +109,14 @@ class _PlantsPageState extends State<PlantsPage> {
                                   textAlign: TextAlign.center,
                                   style: const TextStyle(
                                       fontSize: 16.0,
-                                      fontWeight: FontWeight.bold),
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white),
                                 ),
                                 Text(
-                                  '$harvestTime dias até colheita',
+                                  '$harvestTime dias para colheita',
                                   textAlign: TextAlign.center,
-                                  style: const TextStyle(fontSize: 14.0),
+                                  style: const TextStyle(
+                                      fontSize: 14.0, color: Colors.white),
                                 ),
                               ],
                             ),

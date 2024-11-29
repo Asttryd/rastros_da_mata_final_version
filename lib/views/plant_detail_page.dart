@@ -21,10 +21,20 @@ class PlantDetailPage extends StatelessWidget {
     final String soilNeeds = plant['soilNeeds']?.toString() ?? 'N/A';
     final String description =
         plant['description']?.toString() ?? 'Sem descrição';
+    final String howToHarvest = plant['howToHarvest']?.toString() ?? 'N/A';
     final String warnings = plant['warnings']?.toString() ?? 'Sem avisos';
 
     return Scaffold(
-      appBar: AppBar(title: Text(name)),
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: Text(name),
+        titleTextStyle: const TextStyle(color: Colors.white, fontSize: 25.0),
+        centerTitle: true,
+        backgroundColor: const Color.fromARGB(255, 12, 99, 56),
+        iconTheme: const IconThemeData(
+          color: Colors.white, // Drawer icon color
+        ),
+      ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -41,6 +51,8 @@ class PlantDetailPage extends StatelessWidget {
             Text('Que tipo de solo precisa?: $soilNeeds'),
             const SizedBox(height: 8.0),
             Text('Descrição: $description'),
+            const SizedBox(height: 8.0),
+            Text('Como fazer a colheita: $howToHarvest'),
             const SizedBox(height: 8.0),
             Text('Avisos: $warnings'),
           ],
