@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:rastros_da_mata_official_app/services/firestore.dart';
 import 'package:rastros_da_mata_official_app/views/plant_detail_page.dart';
+import 'package:rastros_da_mata_official_app/widgets/drawer_menu.dart';
 
 class PlantsPage extends StatefulWidget {
   const PlantsPage({super.key});
@@ -17,6 +18,7 @@ class _PlantsPageState extends State<PlantsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: const Text('Plantas')),
+        drawer: const CustomDrawer(),
         body: StreamBuilder<QuerySnapshot>(
           stream: firestoreService.getPlantsStream(),
           builder: (context, snapshot) {

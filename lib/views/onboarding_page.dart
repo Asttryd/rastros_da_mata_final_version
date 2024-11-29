@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:rastros_da_mata_official_app/views/plants_page.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -65,17 +64,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               onPressed: () {
                 if (_pageController.page == 3) {
                   if (_isChecked) {
-                    Navigator.pushAndRemoveUntil(
+                    Navigator.pushNamedAndRemoveUntil(
                       context,
-                      MaterialPageRoute(
-                          builder: (context) => const PlantsPage()),
-                      (Route<dynamic> route) => false,
+                      '/plants', // Named route for the home screen
+                      (route) => false, // Removes all previous routes
                     );
                   } else {
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(
-                          content:
-                              Text("Please agree to the terms to proceed.")),
+                          content: Text(
+                              "Por favor, aceite os termos para poder prosseguir.")),
                     );
                   }
                 } else {
