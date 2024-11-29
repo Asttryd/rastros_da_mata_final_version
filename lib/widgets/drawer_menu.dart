@@ -20,7 +20,7 @@ class CustomDrawer extends StatelessWidget {
             child: Text(
               'Menu',
               style: TextStyle(
-                color: Color.fromARGB(255, 0, 55, 6),
+                color: Color.fromARGB(255, 12, 99, 56),
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
@@ -29,6 +29,8 @@ class CustomDrawer extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.emoji_nature_outlined),
             title: const Text('Plantas'),
+            textColor: const Color.fromARGB(255, 12, 99, 56),
+            iconColor: const Color.fromARGB(255, 12, 99, 56),
             onTap: () {
               Navigator.pushNamedAndRemoveUntil(
                 context,
@@ -40,6 +42,8 @@ class CustomDrawer extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.info),
             title: const Text('Sobre nós'),
+            textColor: const Color.fromARGB(255, 12, 99, 56),
+            iconColor: const Color.fromARGB(255, 12, 99, 56),
             onTap: () {
               Navigator.pushNamedAndRemoveUntil(
                 context,

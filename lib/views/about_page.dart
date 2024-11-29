@@ -10,9 +10,9 @@ class AboutPage extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text('Sobre nós'),
-        titleTextStyle: TextStyle(color: Colors.white, fontSize: 25.0),
+        titleTextStyle: const TextStyle(color: Colors.white, fontSize: 25.0),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 0, 100, 0),
+        backgroundColor: const Color.fromARGB(255, 12, 99, 56),
         iconTheme: const IconThemeData(
           color: Colors.white, // Drawer icon color
         ),
@@ -28,7 +28,7 @@ class AboutPage extends StatelessWidget {
               style: TextStyle(
                   fontSize: 27.0,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 31, 92, 0)),
+                  color: Color.fromARGB(255, 12, 99, 56)),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30),
@@ -77,7 +77,7 @@ class AboutPage extends StatelessWidget {
               style: TextStyle(
                   fontSize: 27.0,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 31, 92, 0)),
+                  color: Color.fromARGB(255, 12, 99, 56)),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30),
@@ -100,7 +100,7 @@ class AboutPage extends StatelessWidget {
               style: TextStyle(
                   fontSize: 27.0,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 31, 92, 0)),
+                  color: Color.fromARGB(255, 12, 99, 56)),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30),
@@ -120,7 +120,9 @@ class AboutPage extends StatelessWidget {
             const Text(
               'asptstudios@gmail.com',
               style: TextStyle(
-                fontSize: 14.0,
+                fontSize: 15.0,
+                color: Color.fromARGB(255, 12, 99, 56),
+                fontWeight: FontWeight.bold,
               ),
               textAlign: TextAlign.center,
             ),

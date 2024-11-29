@@ -53,7 +53,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   dotHeight: 8.0,
                   dotWidth: 8.0,
                   spacing: 16.0,
-                  activeDotColor: Color.fromARGB(255, 3, 94, 3),
+                  activeDotColor: Color.fromARGB(255, 12, 99, 56),
                 ),
               ),
             ),
@@ -84,10 +84,20 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   );
                 }
               },
-              child: Text(
-                  _pageController.hasClients && _pageController.page == 3
-                      ? 'Finalizar'
-                      : 'Próximo'),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: _isChecked
+                      ? const Color.fromARGB(255, 12, 99, 56)
+                      : Colors.grey,
+                  foregroundColor: Colors.white,
+                  disabledBackgroundColor: Color.fromARGB(255, 96, 96, 96),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12)),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 12, horizontal: 24)),
+              child: const Text(
+                'Próximo',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
             ),
           )
         ],
@@ -136,7 +146,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             'Encontrou alguma planta que lhe despertou curiosidade? Se motivou a plantar aquele temperinho na janela da sua casa? Leia, cultive e aproveite!',
             style: TextStyle(fontSize: 16),
           ),
-          const SizedBox(height: 24.0),
+          const SizedBox(height: 35.0),
           GestureDetector(
             onTap: () => _openLink(
                 "https://rastrosdamata.blogspot.com/2023/03/privacy-policy-para-idioma-portugues.html"),
@@ -162,6 +172,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 _isChecked = value ?? false;
               });
             },
+            activeColor: const Color.fromARGB(255, 12, 99, 56),
+            checkColor: Colors.white,
             title: const Text(
                 "Eu concordo com os Termos de Serviço e a Política de Privacidade."),
           ),
