@@ -11,13 +11,18 @@ class CustomDrawer extends StatelessWidget {
         children: [
           const DrawerHeader(
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 0, 100, 5),
+              image: DecorationImage(
+                image: AssetImage('assets/images/growth.png'),
+                fit: BoxFit.cover,
+              ),
             ),
+            // alignment: Alignment.center,
             child: Text(
               'Menu',
               style: TextStyle(
-                color: Colors.white,
+                color: Color.fromARGB(255, 0, 55, 6),
                 fontSize: 24,
+                fontWeight: FontWeight.bold,
               ),
             ),
           ),

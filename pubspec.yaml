@@ -68,6 +68,10 @@ flutter:
     - assets/images/plant.png
     - assets/images/planting.png
     - assets/images/welcome.png
+    - assets/images/growth.png
+    - assets/images/pots.png
+    - assets/images/seeding.png
+    - assets/images/contact.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

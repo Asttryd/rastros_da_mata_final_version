@@ -16,6 +16,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Column(
         children: [
           Expanded(
@@ -66,8 +67,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   if (_isChecked) {
                     Navigator.pushNamedAndRemoveUntil(
                       context,
-                      '/plants', // Named route for the home screen
-                      (route) => false, // Removes all previous routes
+                      '/plants',
+                      (route) => false,
                     );
                   } else {
                     ScaffoldMessenger.of(context).showSnackBar(

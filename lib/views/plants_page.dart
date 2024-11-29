@@ -17,7 +17,16 @@ class _PlantsPageState extends State<PlantsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text('Plantas')),
+        backgroundColor: Colors.white,
+        appBar: AppBar(
+          title: const Text('Plantas'),
+          titleTextStyle: TextStyle(color: Colors.white, fontSize: 25.0),
+          centerTitle: true,
+          backgroundColor: Color.fromARGB(255, 0, 100, 0),
+          iconTheme: const IconThemeData(
+            color: Colors.white, // Drawer icon color
+          ),
+        ),
         drawer: const CustomDrawer(),
         body: StreamBuilder<QuerySnapshot>(
           stream: firestoreService.getPlantsStream(),
