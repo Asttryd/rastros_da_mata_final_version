@@ -25,6 +25,7 @@ class PlantDetailPage extends StatelessWidget {
     final String warnings = plant['warnings']?.toString() ?? 'Sem avisos';
 
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(name),
         titleTextStyle: const TextStyle(color: Colors.white, fontSize: 25.0),
