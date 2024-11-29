@@ -1,5 +1,5 @@
 name: rastros_da_mata_official_app
-description: "A new Flutter project."
+description: "Cultive uma alimentação melhor com esse aplicativo de jardinagem."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -72,6 +72,13 @@ flutter:
     - assets/images/pots.png
     - assets/images/seeding.png
     - assets/images/contact.png
+    - assets/icons/logo.png
+    - assets/icons/logo-mdpi.png
+    - assets/icons/logo-hdpi.png
+    - assets/icons/logo-xhdpi.png
+    - assets/icons/logo-xxhdpi.png
+    - assets/icons/logo-xxxhdpi.png
+    - assets/icons/logo-xxxxhdpi.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
