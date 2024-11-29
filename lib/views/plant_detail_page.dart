@@ -21,6 +21,7 @@ class PlantDetailPage extends StatelessWidget {
     final String soilNeeds = plant['soilNeeds']?.toString() ?? 'N/A';
     final String description =
         plant['description']?.toString() ?? 'Sem descrição';
+    final String howToHarvest = plant['howToHarvest']?.toString() ?? 'N/A';
     final String warnings = plant['warnings']?.toString() ?? 'Sem avisos';
 
     return Scaffold(
@@ -41,6 +42,8 @@ class PlantDetailPage extends StatelessWidget {
             Text('Que tipo de solo precisa?: $soilNeeds'),
             const SizedBox(height: 8.0),
             Text('Descrição: $description'),
+            const SizedBox(height: 8.0),
+            Text('Como fazer a colheita: $howToHarvest'),
             const SizedBox(height: 8.0),
             Text('Avisos: $warnings'),
           ],
