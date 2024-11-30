@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "rastros_da_mata_official_app" "\0"
+            VALUE "CompanyName", "com.rastrosdamata" "\0"
+            VALUE "FileDescription", "rastros_da_mata" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "rastros_da_mata_official_app" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "rastros_da_mata_official_app.exe" "\0"
-            VALUE "ProductName", "rastros_da_mata_official_app" "\0"
+            VALUE "InternalName", "rastros_da_mata" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 com.rastrosdamata. All rights reserved." "\0"
+            VALUE "OriginalFilename", "rastros_da_mata.exe" "\0"
+            VALUE "ProductName", "rastros_da_mata" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

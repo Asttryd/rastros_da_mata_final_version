@@ -1,4 +1,4 @@
-package com.example.rastros_da_mata_official_app
+package com.rastrosdamata.rastros_da_mata
 
 import io.flutter.embedding.android.FlutterActivity
 

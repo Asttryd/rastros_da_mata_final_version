@@ -1,6 +1,6 @@
 {
-    "name": "rastros_da_mata_official_app",
-    "short_name": "rastros_da_mata_official_app",
+    "name": "rastros_da_mata",
+    "short_name": "rastros_da_mata",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

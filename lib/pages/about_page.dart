@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rastros_da_mata_official_app/widgets/drawer_menu.dart'; // Import the custom drawer
+import 'package:rastros_da_mata/widgets/drawer_menu.dart'; // Import the custom drawer
 
 class AboutPage extends StatelessWidget {
   const AboutPage({Key? key}) : super(key: key);
